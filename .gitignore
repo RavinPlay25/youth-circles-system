@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.*
+
+# Node
+node_modules/
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Docker
+docker-data/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# WSL / Unix
+*.sock
