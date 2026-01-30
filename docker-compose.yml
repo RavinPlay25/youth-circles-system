@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: youth-circles-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: youth_circles_dev
+      POSTGRES_USER: youth_dev
+      POSTGRES_PASSWORD: youth_dev_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
